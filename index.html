@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Font awesome icons-->
+    <script src="https://kit.fontawesome.com/69d6781e1c.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <title>E-law</title>
+
+    <style>
+        body{
+            background-color: rgb(206, 203, 203);
+            font-family: 'Bree Serif', serif;
+        }
+        /* Navbar Section */
+        header{
+            background: url('./images/Home2.jpg');
+            background-size: cover;
+            background-position:center;
+            min-height: 450px;
+            opacity: 0.9;
+        }
+        header nav .container>span {
+            font-size: 32px;
+        }
+        .sidenav li>a {
+            color: rgb(122, 7, 122);
+        }
+        .nav li>a {
+            color: #f9a825;
+        }
+
+        /* Services Section */
+        #services h2{
+            text-align: center;
+        }
+        #services .push-l7 img{
+            height: 235px;
+            width: 240px;
+        }
+
+        .box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:2px;
+        }
+        .box textarea{
+            width:500px;
+            height: 150px;
+        }
+
+        /* Clients Section */
+        .card .card-image img{
+            width: 30%;
+            margin: auto;
+        }
+        #clients h2{
+            text-align: center;
+        }
+        /* Utility Classes */
+        .section {
+            padding-top:4vw;
+            padding-bottom:4vw;
+        }
+        .btn{
+            background-color: purple;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <header id="navbar">
+        <nav class="nav-trigger transparent">
+            <div class="container">
+                <span class="yellow-text text-darken-3" >
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </span>
+                    <span class="yellow-text text-darken-3">E-LAW</span>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down nav">
+                    <li><a href="#navbar">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li><a href="#navbar">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="box">
+            <h2 class="yellow-text text-darken-3">Welcome To E-Law</h2>
+            <p class="yellow-text text-darken-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, inventore nam? Id, veniam quisquam! Consequuntur</p>
+            <p class="yellow-text text-darken-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, placeat aliquid. Eum, aliquam? Mollitia quae totam consectetur sapiente, reiciendis perspiciatis nesciunt eum quam omnis in.</p>
+            <p class="yellow-text text-darken-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet commodi exercitationem est pariatur tenetur officia?</p>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="container section purple-text text-darken-3 scrollspy" id="services">
+        <h2 class="purple-text text-darken-3">Our Services</h2>
+        <div class="rows">
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="./Images/service1.1.jpg" alt="" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 l6 offset-l1">
+                  <h2 class="purple-text text-darken-3">Tax Issues</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 l4 offset-l1 push-l7">
+                    <img src="./Images/service2.1.jpg" alt="" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 l6 offset-l1 pull-l5 right-align">
+                  <h2 class="purple-text text-darken-3">AI Based Responses</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 l4">
+                    <img src="./Images/service3.1.jpg" alt="" class="responsive-img materialboxed">
+                </div>
+                <div class="col s12 l6 offset-l1">
+                  <h2 class="purple-text text-darken-3">Available 24/7</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+                </div>
+        
+    </section>
+
+    <!-- Query Section -->
+    <div class="parallax-container" id="query">
+        <div class="parallax">
+            <img src="./Images/query1.jpg" alt="Reload" class="responsive-img">
+        </div>
+        <div class="box">
+            <h2 class="yellow-text text-darken-3">Query</h2>
+            <label for="feedback" class="yellow-text text-darken-3">Write your query here:</label>
+            <textarea name="feedback" id="feedback" cols="30" rows="30" class="white-text"></textarea>
+            <button class="btn transparent center-align yellow-text text-darken-3 waves-effect">Submit Request</button>
+            <textarea name="feedback" id="feedback" cols="30" rows="30" class="white-text"></textarea>
+        </div>
+    </div>
+
+
+    <!-- Clients Section -->
+    <div class="container purple-text text-darken-3 scrollspy" id="clients">
+        <h2 class="purple-text text-darken-3">Our Clients</h2>
+        <di class="row">
+            <div class="col s12 l6">
+                <div class="card grey lighten-4 purple-text">
+                    <div class="card-image">
+                        <img src="./Images/person.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Clients</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex delectus ducimus, rem cum illo maiores laboriosam a iure voluptatem ipsa vel doloremque.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">More Details</a>
+                        <a href="#">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6">
+                <div class="card grey lighten-4 purple-text">
+                    <div class="card-image">
+                        <img src="./Images/person.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Clients</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex delectus ducimus, rem cum illo maiores laboriosam a iure voluptatem ipsa vel doloremque.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">More Details</a>
+                        <a href="#">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6">
+                <div class="card grey lighten-4 purple-text">
+                    <div class="card-image">
+                        <img src="./Images/person.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Clients</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex delectus ducimus, rem cum illo maiores laboriosam a iure voluptatem ipsa vel doloremque.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">More Details</a>
+                        <a href="#">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 l6">
+                <div class="card grey lighten-4 purple-text">
+                    <div class="card-image">
+                        <img src="./Images/person.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Clients</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ex delectus ducimus, rem cum illo maiores laboriosam a iure voluptatem ipsa vel doloremque.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">More Details</a>
+                        <a href="#">Email</a>
+                    </div>
+                </div>
+            </div>
+        </di>
+    </div>
+
+
+    <!-- Parallax Section -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="./Images/query2.jpg" alt="" class="responsive-img">
+        </div>
+        <div class="box">
+            <h3 class="yellow-text text-darken-3">For Booking</h3>
+            <p class="yellow-text text-darken-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, modi?</p>
+            <p class="yellow-text text-darken-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eaque voluptatem quidem ratione eveniet molestias!</p>
+            <p class="yellow-text text-darken-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, natus.</p>
+            <button class="btn yellow darken-3">Book Now</button>
+        </div>
+    </div>
+
+
+    <!-- Contact Us Section -->
+    <section class="container section purple-text text-darken-3 scrollspy" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="purple-text text-darken-3">Contact Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, provident unde quasi ipsa harum atque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, provident unde quasi ipsa harum atque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, provident unde quasi ipsa harum atque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, provident unde quasi ipsa harum atque.</p>
+            </div>
+            <div class="col s12 l5 offset-2">
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Enter Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Enter Your Message</label>
+                        </textarea>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">At what date do you need the services...</label>
+                    </div>
+                    <div class="input-field">
+                        <p>Services Needed.....</p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>Tax Issues</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox">
+                                <span>AI based Responses</span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn waves-effect">Submit Form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia id velit repellat, delectus aliquid fugit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia id velit repellat, delectus aliquid fugit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia id velit repellat, delectus aliquid fugit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia id velit repellat, delectus aliquid fugit.</p>
+                </div>
+                <div class="col s12 l4 offset-2">
+                    <h2>Let's Connect</h2>
+                    <ul>
+                        <li><a href="#" class="grey-text text-light-3">
+                            <i class="fab fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a></li>
+                        <li><a href="#" class="grey-text text-light-3">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a></li>
+                        <li><a href="#" class="grey-text text-light-3">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a></li>
+                        <li><a href="#" class="grey-text text-light-3">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright  grey darken-4">
+            <div class="container center-align">&copy; E-LAW 2022</div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true 
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+
+</html>
